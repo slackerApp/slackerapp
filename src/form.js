@@ -6,8 +6,8 @@ class Form extends Component {
     return (
       <div className="App">
           <div className="Form">
-            <input onChange={(event)=>this.props.handlesearchchange(event)} placeholder="Enter phone or email" value={this.props.searchinput}></input>
-            <input onClick={()=>this.props.passhadlesubmit()} type="submit"/>
+            <input className="searchInput" onChange={(event)=>this.props.handlesearchchange(event)} placeholder="Enter phone or email" value={this.props.searchinput}></input>
+            <input className="submitBtn"onClick={(event)=>this.props.passhadlesubmit(event)} type="submit"/>
           </div>
       </div>
     );
